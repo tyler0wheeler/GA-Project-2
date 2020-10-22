@@ -3,11 +3,18 @@ body {
 }
 form {
   display: inline-grid;
+}
+
+
 
 }
-img{
-  display: inline-block;
-  width: 400px;
-  height: 400px;
+img {
+  display: block;
+  width: 300px;
+  height: 300px;
   float: inherit;
+}
+.index-image:hover{
+  filter: grayscale(100%);
+
 }

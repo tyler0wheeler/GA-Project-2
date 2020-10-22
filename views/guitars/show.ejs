@@ -1,10 +1,11 @@
 <%- include('../partials/header.ejs') %>
 <%- include('../partials/nav.ejs') %>
-<h1>Guitars Daddy</h1>
-  <ul>
+<div class="container">
+<h2>Builder name</h2>
+  <ul class="column">
       <img src="<%= guitars.frontImage%>" alt="">
       <img src="<%= guitars.backImage%>" alt="">
-          <li> <%= guitars.bodyShape%> </li>
+          <li>  Body Shape: <%= guitars.bodyShape%> </li>
           <li>  Top Wood: <%= guitars.topWood%> </li>
           <li>  Back and Sides Wood : <%= guitars.backAndSidesWood%> </li>
           <li>  Neck Wood: <%= guitars.neckWood%> </li>
@@ -23,6 +24,7 @@
           <li>  Body Finish: <%= guitars.bodyFinish%></li>
           <li>  Neck Finish: <%= guitars.neckFinish%> </li>
           <li>  Additional Comments: <%= guitars.additionalComments%> </li>
+
   </ul>
 
 <nav>
@@ -32,4 +34,5 @@
 <nav>
   <a href="/luthiers/">Back to Gallery</a>
 </nav>
+</div>
 <%- include('../partials/footer.ejs') %>
