@@ -1,0 +1,35 @@
+<%- include('../partials/header.ejs') %>
+<h2>New Build Entry</h2>
+<form action="/luthiers/<%=guitars.id%>?_method=PUT" method="POST">
+  Body Shape: <input type="text" name="bodyShape" value="<%= guitars.bodyShape%>">
+  Top Wood: <input type="text" name="topWood" value="<%= guitars.topWood%>">
+  Back and Sides Wood: <input type="text" name="backAndSidesWood" value="<%= guitars.backAndSidesWood%>">
+  Neck Wood: <input type="text" name="neckWood" value="<%= guitars.neckWood%>">
+  Fret Board: <input type="text" name="fretboard" value="<%= guitars.fretboard%>">
+  Body Binding: <input type="text" name="bodyBinding" value="<%= guitars.bodyBinding%>">
+  Neck Binding: <input type="text" name="neckBinding" value="<%= guitars.neckBinding%>">
+  Bridge : <input type="text" name="bridge" value="<%= guitars.bridge%>">
+  Truss Rod: <input type="text" name="trussrod" value="<%= guitars.trussrod%>">
+  Nut: <input type="text" name="nut" value="<%= guitars.nut%>">
+  Saddle <input type="text" name="saddle" value="<%= guitars.saddle%>">
+  # of Frets: <input type="number" name="numOfFrets" min=0 value="<%= guitars.numOfFrets%>">
+  Fret Material: <input type="text" name="fretMaterial" value="<%= guitars.fretMaterial%>">
+  Inlay Material: <input type="text" name="inlayMaterial" value="<%= guitars.inlayMaterial%>">
+  Tuning Machines: <input type="text" name="tuningMachines" value="<%= guitars.tuningMachines%>">
+  Electronics: <input type="text" name="electronics" value="<%= guitars.electronics%>">
+  Body Finish: <input type="text" name="bodyFinish" value="<%= guitars.bodyFinish%>">
+  Neck Finish: <input type="text" name="neckFinish" value="<%= guitars.neckFinish%>">
+  Front Image: <input type="text" name="frontImage" value="<%= guitars.frontImage%>">
+  Back Image: <input type="text" name="backImage" value="<%= guitars.backImage%>">
+  Addition Comments: <input type="text" name="additionalComments" value="<%= guitars.additionalComments%>">
+  <input type="submit" name="edit" value="Edit Build"/>
+</form>
+ <nav>
+   <a href="/luthiers/<%=guitars.id%>">Don't Edit</a>
+ </nav>
+<form action="/luthiers/<%=guitars.id%>?_method=DELETE" method="POST">
+  <input type="submit" name="" value="Delete Build">
+</form>
+
+
+<%- include('../partials/footer.ejs') %>
