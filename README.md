@@ -2,7 +2,7 @@
 
 -My idea is to create an app that allows Luthiers to post their builds and all the details of their build. Each person would be allowed to add an entry to the page that consists of the details of the instrument, a picture, and a story of inspiration as to why they built it.
 
- BODY SIZE:
+
 FINISH TOP:
 CONSTRUCTION
 BACK & SIDE FINISH:
@@ -12,12 +12,12 @@ BRACE SHAPE:
 FINGERBOARD WIDTH AT NUT:
 TOP MATERIAL:
 NECK SHAPE:
-BACK MATERIAL:
+BACK MATERIAL: --
 NECK TAPER:
-SIDE MATERIAL:
+SIDE MATERIAL: --
 TOP COLOR:
 BRIDGE STYLE:
-BINDING:
+BINDING: --
 BRIDGE STRING SPACING:
 TOP INLAY MATERIAL:
 BRIDGE MATERIAL:
@@ -47,3 +47,6 @@ NUT MATERIAL:
 -a community board where users can post questions or information to help other luthiers would be great
 -I can start off the page with my own builds and then reach out to other luthiers to post some of their builds as well to add some more content
 -the ability to upload sound clips
+- Stretch goals
+  one user and many instrument builds.  oneToMany
+  use css framework

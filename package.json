@@ -1,0 +1,30 @@
+{
+  "name": "GA-Project-2",
+  "version": "1.0.0",
+  "description": "-My idea is to create an app that allows Luthiers to post their builds and all the details of their build. Each person would be allowed to add an entry to the page that consists of the details of the instrument, a picture, and a story of inspiration as to why they built it.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyler0wheeler/GA-Project-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyler0wheeler/GA-Project-2/issues"
+  },
+  "homepage": "https://github.com/tyler0wheeler/GA-Project-2#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.10.9"
+  }
+}

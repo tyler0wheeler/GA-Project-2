@@ -1,0 +1,14 @@
+<%- include('../partials/header.ejs') %>
+<%- include('../partials/nav.ejs') %>
+<h1>Guitars Daddy</h1>
+  <ul>
+    <% for(let i = 0; i < guitars.length; i ++){ %>
+      <a href="/luthiers/<%=guitars[i].id; %>"><img src="<%= guitars[i].frontImage%>" alt=""></a>
+      <li> <%= guitars[i].bodyShape%> </li>
+
+      <%}%>
+  </ul>
+
+
+
+<%- include('../partials/footer.ejs') %>

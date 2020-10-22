@@ -1,0 +1,32 @@
+<%- include('../partials/header.ejs') %>
+<h2>New Build Entry</h2>
+<form action="/luthiers" method="POST">
+  Body Shape: <input type="text" name="bodyShape" value="">
+  Top Wood: <input type="text" name="topWood" value="">
+  Back and Sides Wood: <input type="text" name="backAndSidesWood" value="">
+  Neck Wood: <input type="text" name="neckWood" value="">
+  Fret Board: <input type="text" name="fretboard" value="">
+  Body Binding: <input type="text" name="bodyBinding" value="">
+  Neck Binding: <input type="text" name="neckBinding" value="">
+  Bridge : <input type="text" name="bridge" value="">
+  Truss Rod: <input type="text" name="trussrod" value="">
+  Nut: <input type="text" name="nut" value="">
+  Saddle <input type="text" name="saddle" value="">
+  # of Frets: <input type="number" name="numOfFrets" min=0>
+  Fret Material: <input type="text" name="fretMaterial" value="">
+  Inlay Material: <input type="text" name="inlayMaterial" value="">
+  Tuning Machines: <input type="text" name="tuningMachines" value="">
+  Electronics: <input type="text" name="electronics" value="">
+  Body Finish: <input type="text" name="bodyFinish" value="">
+  Neck Finish: <input type="text" name="neckFinish" value="">
+  Front Image: <input type="text" name="frontImage" value="">
+  Back Image: <input type="text" name="backImage" value="">
+  Addition Comments: <input type="text" name="additionalComments" value="">
+  <input type="submit" name="" value="Add Build"/>
+</form>
+
+
+
+
+
+<%- include('../partials/footer.ejs') %>

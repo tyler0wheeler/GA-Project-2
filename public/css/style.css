@@ -1,0 +1,13 @@
+body {
+  background-color: lightpink;
+}
+form {
+  display: inline-grid;
+
+}
+img{
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  float: inherit;
+}

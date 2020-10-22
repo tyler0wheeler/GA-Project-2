@@ -1,0 +1,31 @@
+<%- include('../partials/header.ejs') %>
+<%- include('../partials/nav.ejs') %>
+<h1>Guitars Daddy</h1>
+  <ul>
+      <img src="<%= guitars.frontImage%>" alt="">
+      <img src="<%= guitars.backImage%>" alt="">
+          <li> <%= guitars.bodyShape%> </li>
+          <li>  Top Wood: <%= guitars.topWood%> </li>
+          <li>  Back and Sides Wood : <%= guitars.backAndSidesWood%> </li>
+          <li>  Neck Wood: <%= guitars.neckWood%> </li>
+          <li>  Fretboard: <%= guitars.fretboard%> </li>
+          <li>  Body Binding: <%= guitars.bodyBinding%> </li>
+          <li>  Neck Binding: <%= guitars.neckBinding%>  </li>
+          <li>  Bridge: <%= guitars.bridge%> </li>
+          <li>  Trussrod: <%= guitars.trussrod%> </li>
+          <li>  Nut: <%= guitars.nut%> </li>
+          <li>  Saddle: <%= guitars.saddle%> </li>
+          <li>  # of Frets: <%= guitars.numOfFrets%> </li>
+          <li>  Fret Material: <%= guitars.fretMaterial%> </li>
+          <li>  Inlay Material: <%= guitars.inlayMaterial%> </li>
+          <li>  Tuning Machines: <%= guitars.tuningMachines%> </li>
+          <li>  Electronics: <%= guitars.electronics%> </li>
+          <li>  Neck Finish: <%= guitars.neckFinish%> </li>
+          <li>  Additional Comments: <%= guitars.additionalComments%> </li>
+  </ul>
+
+
+<nav>
+  <a href="/luthiers/">Back to Gallery</a>
+</nav>
+<%- include('../partials/footer.ejs') %>
