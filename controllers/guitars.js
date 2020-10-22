@@ -11,7 +11,8 @@ router.get('/', (req, res) =>{
       console.log(err);
     } else {
     res.render('guitars/index.ejs', {
-      guitars: allGuitars
+      guitars: allGuitars,
+      currentUser: req.session.currentUser
     })
     console.log(allGuitars);
   }
@@ -19,7 +20,7 @@ router.get('/', (req, res) =>{
 })
 //New
 router.get('/new', (req, res) =>{
-  res.render('guitars/new.ejs')
+  res.render('guitars/new.ejs', {currentUser: req.session.currentUser})
 })
 
 //Show
@@ -29,7 +30,8 @@ router.get('/:id', (req, res) =>{
       console.log(err);
     } else {
     res.render('guitars/show.ejs', {
-      guitars: showGuitar
+      guitars: showGuitar,
+      currentUser: req.session.currentUser
     })
     console.log(showGuitar);
       }
@@ -52,7 +54,8 @@ router.post('/', (req, res) =>{
 router.get('/:id/edit', (req, res) =>{
   Guitar.findById(req.params.id, (err, editGuitar) =>{
     res.render('guitars/edit.ejs', {
-      guitars: editGuitar
+      guitars: editGuitar,
+      currentUser: req.session.currentUser
     })
   })
 })

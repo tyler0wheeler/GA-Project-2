@@ -2,5 +2,16 @@
   <ul>
     <li><a href="/luthiers/">Gallery</a></li>
     <li><a href="/luthiers/new/">Post a Build!</a></li>
+    <% if (currentUser) { %>
+<li>Welcome <%= currentUser.username %></li>
+<li>
+  <form action="/members?_method=DELETE" method="POST">
+    <input type="submit" value="Log Out" class="delete-button" />
+  </form>
+</li>
+<% } else { %>
+    <li><a href="/users/new">Register</a></li>
+    <li><a href="/members/new">Log In</a></li>
+      <% } %>
   </ul>
 </nav>
