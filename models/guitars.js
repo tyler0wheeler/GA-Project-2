@@ -2,6 +2,7 @@ const mongoose = require('mongoose')
 
 const guitarSchema = new mongoose.Schema({
   builder: String,
+  builderId: String,
   bodyShape: {type: String, required: true},
   topWood: {type: String, required: true},
   backAndSidesWood: {type: String, required: true},

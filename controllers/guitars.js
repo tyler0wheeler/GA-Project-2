@@ -52,7 +52,7 @@ router.post('/', isAuthenticated,(req, res) =>{
     } else {
       console.log(newGuitar);
     }
-    res.redirect('/luthiers')
+    res.redirect('/members')
   })
 })
 

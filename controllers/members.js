@@ -14,7 +14,7 @@ members.get('/new', (req, res) =>{
 //   {currentUser: req.session.currentUser})
 // })
 members.get('/', (req, res) =>{
-  Guitar.find({builder: req.session.currentUser.name}, (err, allGuitars) =>{
+  Guitar.find({builderId: req.session.currentUser._id}, (err, allGuitars) =>{
     if(err){
       console.log(err);
     } else {
@@ -22,7 +22,7 @@ members.get('/', (req, res) =>{
       guitars: allGuitars,
       currentUser: req.session.currentUser
     })
-    console.log(req.session.currentUser.name);
+    console.log(req.session.currentUser._id);
   }
   })
 })
@@ -36,7 +36,7 @@ members.get('/:id', (req, res) =>{
       guitars: showGuitar,
       currentUser: req.session.currentUser
     })
-    console.log(req.session.currentUser.name);
+    console.log(req.session.currentUser._id);
       }
     })
   })
