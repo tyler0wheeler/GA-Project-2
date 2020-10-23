@@ -1,4 +1,5 @@
 <%- include('../partials/header.ejs') %>
+<div class='container'>
 <h2>New Build Entry</h2>
 <form action="/luthiers" method="POST">
   Body Shape: <input type="text" name="bodyShape" value="">
@@ -24,8 +25,12 @@
   Addition Comments: <input type="text" name="additionalComments" value="">
   <input type="submit" name="" value="Add Build"/>
 </form>
-
-
+<nav>
+  <table>
+    <td><a href="/luthiers/">Back to Gallery</a></td>
+  </table>
+</nav>
+</div>
 
 
 

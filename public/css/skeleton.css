@@ -31,9 +31,9 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0px 20px;
   box-sizing: border-box; }
 .column,
 .columns {
@@ -324,9 +324,12 @@ pre > code {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
 td {
+  width: auto;
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
+  border-bottom: 1px solid #E1E1E1;
+  border-top: 1px solid #E1E1E1;
+ }
 th:first-child,
 td:first-child {
   padding-left: 0; }

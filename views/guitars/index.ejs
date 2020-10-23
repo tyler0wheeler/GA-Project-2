@@ -1,16 +1,17 @@
 <%- include('../partials/header.ejs') %>
 <%- include('../partials/nav.ejs') %>
 <div class="container">
-  <div class="container">
   <h2>Guitars Daddy</h2>
-  </div>
+  <table>
   <ul class="column">
     <% for(let i = 0; i < guitars.length; i ++){ %>
-      <a href="/luthiers/<%=guitars[i].id; %>"><img src="<%= guitars[i].frontImage%>" class="index-image" alt=""></a>
+      <tr><a href="/luthiers/<%=guitars[i].id; %>"><img src="<%= guitars[i].frontImage%>" class="index-image" alt=""></a></tr>
       <li> <%= guitars[i].bodyShape%> </li>
 
       <%}%>
   </ul>
+  </table>
+  <a href="/luthiers" style="padding-bottom: 30px;">Back to Top</a>
 </div>
-<a href="/luthiers">Back to Top</a>
+
 <%- include('../partials/footer.ejs') %>

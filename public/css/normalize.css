@@ -182,7 +182,7 @@ sub {
  */
 
 img {
-  border: 10px;
+  border: 5px;
   width: 40%;
   border-style: outset;
 }

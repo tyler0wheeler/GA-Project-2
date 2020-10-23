@@ -1,4 +1,6 @@
 <%- include('../partials/header.ejs') %>
+<div class="container">
+
   <h2>Registration</h2>
     <form class="" action="/users" method="POST">
       Name: <input type="text" name="name" value="">
@@ -7,4 +9,11 @@
       <input type="submit" value="Register">
     </form>
 
+    <nav>
+      <table>
+        <td><a href="/members/new">Already a Member?</a></td>
+        <td><a href="/luthiers/">Back to Gallery</a></td>
+      </table>
+    </nav>
+</div>
 <%- include('../partials/footer.ejs') %>

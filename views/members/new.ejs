@@ -1,9 +1,18 @@
 <%- include('../partials/header.ejs') %>
-  <h2>Registration</h2>
+<div class="container">
+  <h2>Log In</h2>
+
     <form class="" action="/members" method="POST">
       Username: <input type="text" name="username" value="">
       Password: <input type="password" name="password" value="">
-      <input type="submit" value="Register">
+      <input type="submit" value="Login">
     </form>
 
+    <nav>
+      <table>
+        <td><a href="/users/new">Not a Member? Sign Up!</a></td>
+        <td><a href="/luthiers/">Back to Gallery</a></td>
+      </table>
+    </nav>
+  </div>
 <%- include('../partials/footer.ejs') %>

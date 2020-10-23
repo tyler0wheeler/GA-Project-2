@@ -2,7 +2,13 @@ const express = require('express')
 const router = express.Router()
 const Guitar = require('../models/guitars.js')
 
-
+const isAuthenticated = (req, res, next) =>{
+	if (req.session.currentUser){
+		return next()  // next() is like continue in programming.  Tells us to go to the next route we are trying to hit.
+	} else {
+		res.redirect('/members/new')
+	}
+}
 
 //Index
 router.get('/', (req, res) =>{
@@ -19,7 +25,7 @@ router.get('/', (req, res) =>{
   })
 })
 //New
-router.get('/new', (req, res) =>{
+router.get('/new', isAuthenticated,(req, res) =>{
   res.render('guitars/new.ejs', {currentUser: req.session.currentUser})
 })
 
@@ -39,7 +45,7 @@ router.get('/:id', (req, res) =>{
   })
 
 // New
-router.post('/', (req, res) =>{
+router.post('/', isAuthenticated,(req, res) =>{
   Guitar.create(req.body, (err, newGuitar) =>{
     if (err){
       console.log(err);
@@ -51,7 +57,7 @@ router.post('/', (req, res) =>{
 })
 
 //Edit
-router.get('/:id/edit', (req, res) =>{
+router.get('/:id/edit', isAuthenticated, (req, res) =>{
   Guitar.findById(req.params.id, (err, editGuitar) =>{
     res.render('guitars/edit.ejs', {
       guitars: editGuitar,
@@ -71,7 +77,7 @@ router.put('/:id', (req, res) =>{
   })
 })
 //Delete
-router.delete('/:id', (req, res) =>{
+router.delete('/:id', isAuthenticated, (req, res) =>{
   Guitar.findByIdAndRemove(req.params.id, (err, deletedGuitar) =>{
     if (err){
       console.log(err);

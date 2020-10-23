@@ -1,17 +1,21 @@
 <nav>
-  <ul class="container">
-    <li><a href="/luthiers/">Gallery</a></li>
-    <li><a href="/luthiers/new/">Post a Build!</a></li>
+  <ul class="container" style="list-style: none;">
+    <table>
+      <nav>
+    <td><li><a href="/luthiers/">Gallery</a></li></td>
+    <td><li><a href="/luthiers/new/">Post a Build!</a></li></td>
     <% if (currentUser) { %>
-<li>Welcome <%= currentUser.username %></li>
-<li>
-  <form action="/members?_method=DELETE" method="POST">
-    <input type="submit" value="Log Out" class="delete-button" />
-  </form>
-</li>
+      <td><li>Welcome, <%= currentUser.username %>!</li></td>
+      <tr><li>
+        <form action="/members?_method=DELETE" method="POST">
+          <input type="submit" value="Log Out" class="delete-button" />
+        </form>
+      </li></tr>
 <% } else { %>
-    <li><a href="/users/new">Register</a></li>
-    <li><a href="/members/new">Log In</a></li>
+    <td><li><a href="/users/new">Register</a></li></td>
+    <td><li><a href="/members/new">Log In</a></li></td>
       <% } %>
+    </nav>
+      </table>
   </ul>
 </nav>
