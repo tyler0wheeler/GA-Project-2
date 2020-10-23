@@ -2,6 +2,7 @@
 <div class='container'>
 <h2>New Build Entry</h2>
 <form action="/luthiers" method="POST">
+  Builder: <input type="hidden" name="builder" value="<%=currentUser.name%>">
   Body Shape: <input type="text" name="bodyShape" value="">
   Top Wood: <input type="text" name="topWood" value="">
   Back and Sides Wood: <input type="text" name="backAndSidesWood" value="">

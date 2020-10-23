@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 
 const guitarSchema = new mongoose.Schema({
+  builder: String,
   bodyShape: {type: String, required: true},
   topWood: {type: String, required: true},
   backAndSidesWood: {type: String, required: true},
@@ -12,6 +13,7 @@ const guitarSchema = new mongoose.Schema({
   trussrod: {type: String, required: true},
   nut: {type: String, required: true},
   saddle: {type: String, required: true},
+  scaleLength: Number,
   numOfFrets: {type: Number, required: true},
   fretMaterial: {type: String, required: true},
   inlayMaterial: {type: String, required: true},
