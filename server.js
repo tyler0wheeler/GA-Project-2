@@ -37,6 +37,8 @@ const usersController = require('./controllers/users.js')
 app.use('/users', usersController)
 const membersController = require('./controllers/members.js')
 app.use('/members', membersController)
+const communityController = require('./controllers/communityboard.js')
+app.use('/community', communityController)
 
 app.get('/', (req, res) =>{
   res.send('tone daddy')

@@ -24,6 +24,8 @@ const guitarSchema = new mongoose.Schema({
   neckFinish: {type: String, required: true},
   frontImage: String,
   backImage: String,
+  audioSample1: String,
+  audioSample2: String,
   additionalComments: String,
 })
 

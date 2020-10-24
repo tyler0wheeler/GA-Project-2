@@ -1,0 +1,18 @@
+<%- include('../partials/header.ejs') %>
+<div class='container'>
+<h2>New Post</h2>
+<nav>
+  <a href="/community/">Back to Community</a>
+</nav>
+<form action="/community" method="POST">
+  <input type="hidden" name="posterName" value="<%=currentUser.name%>">
+  <input type="hidden" name="posterUserId" value="<%=currentUser._id%>">
+  Post: <input type="text" name="post" value="">
+  <input type="submit" name="" value="Post"/>
+</form>
+<nav>
+  <table>
+    <td><a href="/community/">Back to Gallery</a></td>
+  </table>
+</nav>
+</div>

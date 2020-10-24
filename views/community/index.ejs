@@ -1,0 +1,23 @@
+<%- include('../partials/header.ejs') %>
+<%- include('../partials/nav.ejs') %>
+<div class="container">
+  <h2>Community Daddy</h2>
+  <nav>
+    <a href="/community/new"></a>
+  </nav>
+  <table>
+    <table>
+    <ul class="column">
+      <% for(let i = 0; i < posts.length; i ++){ %>
+
+        <li> <%= posts[i].posterName %> </li>
+        <li> <%= posts[i].post%> </li>
+
+        <%}%>
+    </ul>
+    </table>
+  </table>
+  <a href="/luthiers" style="padding-bottom: 30px;">Back to Top</a>
+</div>
+
+<%- include('../partials/footer.ejs') %>
