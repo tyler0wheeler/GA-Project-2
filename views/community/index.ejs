@@ -2,9 +2,11 @@
 <%- include('../partials/nav.ejs') %>
 <div class="container">
   <h2>Community Daddy</h2>
-  <nav>
-    <a href="/community/new"></a>
-  </nav>
+  <% if (currentUser) { %>
+
+    <p><a href="/community/new">Post</a></p>
+
+  <%}%>
   <table>
     <table>
     <ul class="column">
@@ -17,7 +19,8 @@
     </ul>
     </table>
   </table>
-  <a href="/luthiers" style="padding-bottom: 30px;">Back to Top</a>
+
+  <a href="/community" style="padding-bottom: 30px;">Back to Top</a>
 </div>
 
 <%- include('../partials/footer.ejs') %>
