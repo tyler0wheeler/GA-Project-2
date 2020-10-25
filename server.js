@@ -5,8 +5,22 @@ const session = require('express-session')
 const bcrypt = require('bcrypt')
 require('dotenv').config()
 const app = express()
+const multer = require('multer')
 
-//env variables
+//Set storage engine
+const storage = multer.diskStore({
+  destination: '/luthiers',
+  filename: function(req, file, cb){
+    cb(null,file.fieldname + '-' + Date.now() + path.extname(file.originalname))
+  }
+})
+//Init Upload
+const upload = multer({
+  storage: storage
+}).single('audioSample1')
+
+
+// env variables
 const PORT = process.env.PORT
 const mongodbURI = process.env.MONGODBURI
 

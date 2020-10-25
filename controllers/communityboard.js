@@ -1,6 +1,7 @@
 const bcrypt = require('bcrypt')
 const express = require('express')
 const community = express.Router()
+const multer = require('multer')
 const User = require('../models/users.js')
 const CommunityPost = require ('../models/community.js')
 

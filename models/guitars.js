@@ -14,7 +14,7 @@ const guitarSchema = new mongoose.Schema({
   trussrod: {type: String, required: true},
   nut: {type: String, required: true},
   saddle: {type: String, required: true},
-  scaleLength: Number,
+  scaleLength: String,
   numOfFrets: {type: Number, required: true},
   fretMaterial: {type: String, required: true},
   inlayMaterial: {type: String, required: true},
@@ -26,6 +26,7 @@ const guitarSchema = new mongoose.Schema({
   backImage: String,
   audioSample1: {any: String},
   audioSample2: String,
+  website: String,
   additionalComments: String,
 })
 

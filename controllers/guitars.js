@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const multer = require('multer')
 const Guitar = require('../models/guitars.js')
 
 const isAuthenticated = (req, res, next) =>{

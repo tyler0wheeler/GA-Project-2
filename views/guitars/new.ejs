@@ -1,7 +1,7 @@
 <%- include('../partials/header.ejs') %>
 <div class='container'>
 <h2>New Build Entry</h2>
-<form action="/luthiers" method="POST">
+<form action="/luthiers" method="POST" >
   <input type="hidden" name="builder" value="<%=currentUser.name%>">
   <input type="hidden" name="builderId" value="<%=currentUser._id%>">
   Body Shape: <input type="text" name="bodyShape" value="">
@@ -15,6 +15,7 @@
   Truss Rod: <input type="text" name="trussrod" value="">
   Nut: <input type="text" name="nut" value="">
   Saddle <input type="text" name="saddle" value="">
+  Scale Length: <input type="text" name="scaleLength" value="">
   # of Frets: <input type="number" name="numOfFrets" min=0>
   Fret Material: <input type="text" name="fretMaterial" value="">
   Inlay Material: <input type="text" name="inlayMaterial" value="">
@@ -24,6 +25,7 @@
   Neck Finish: <input type="text" name="neckFinish" value="">
   Front Image: <input type="text" name="frontImage" value="">
   Back Image: <input type="text" name="backImage" value="">
+  Website: <input type="url" name="website" value="">
   Addition Comments: <input type="text" name="additionalComments" value="">
   Audio Sample: <input type="file" name="audioSample1" id="audio" value="" accept="audio/wav">
   <input type="submit" name="" value="Add Build"/>
