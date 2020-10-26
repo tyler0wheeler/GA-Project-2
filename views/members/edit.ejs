@@ -1,6 +1,9 @@
 <%- include('../partials/header.ejs') %>
 <div class="container">
 <h2>New Build Entry</h2>
+<nav>
+  <a href="/members/<%=guitars.id%>">Don't Edit</a>
+</nav>
 <form action="/members/<%=guitars.id%>?_method=PUT" method="POST">
   Body Shape: <input type="text" name="bodyShape" value="<%= guitars.bodyShape%>">
   Top Wood: <input type="text" name="topWood" value="<%= guitars.topWood%>">
@@ -12,7 +15,8 @@
   Bridge : <input type="text" name="bridge" value="<%= guitars.bridge%>">
   Truss Rod: <input type="text" name="trussrod" value="<%= guitars.trussrod%>">
   Nut: <input type="text" name="nut" value="<%= guitars.nut%>">
-  Saddle <input type="text" name="saddle" value="<%= guitars.saddle%>">
+  Saddle: <input type="text" name="saddle" value="<%= guitars.saddle%>">
+  Scal Length: <input type="text" name="scaleLength" value="<%=guitars.scaleLength%>">
   # of Frets: <input type="number" name="numOfFrets" min=0 value="<%= guitars.numOfFrets%>">
   Fret Material: <input type="text" name="fretMaterial" value="<%= guitars.fretMaterial%>">
   Inlay Material: <input type="text" name="inlayMaterial" value="<%= guitars.inlayMaterial%>">
@@ -22,16 +26,13 @@
   Neck Finish: <input type="text" name="neckFinish" value="<%= guitars.neckFinish%>">
   Front Image: <input type="text" name="frontImage" value="<%= guitars.frontImage%>">
   Back Image: <input type="text" name="backImage" value="<%= guitars.backImage%>">
-  Addition Comments: <input type="text" name="additionalComments" value="<%= guitars.additionalComments%>">
+  Website: <input type="url" name="website" value="<%=guitars.website%>">
+  Addition Comments: <input type="text" id="comments" name="additionalComments" value="<%= guitars.additionalComments%>" >
   Audio Sample: <input type="file" name="audioSample1" id="audio" value="<%= guitars.audioSample1%>" accept="audio/wav">
-  <input type="submit" name="edit" value="Edit Build"/>
-</form>
- <nav>
-   <a href="/members/<%=guitars.id%>">Don't Edit</a>
- </nav>
+  <input class="button-primary" type="submit" name="edit" value="Edit Build"/>
 <form action="/members/<%=guitars.id%>?_method=DELETE" method="POST">
-  <input type="submit" name="" value="Delete Build">
+  <input class="button-delete" type="submit" name="" value="Delete Build">
 </form>
 </div>
-
+</form>
 <%- include('../partials/footer.ejs') %>

@@ -7,17 +7,17 @@ require('dotenv').config()
 const app = express()
 const multer = require('multer')
 
-//Set storage engine
-const storage = multer.diskStore({
-  destination: '/luthiers',
-  filename: function(req, file, cb){
-    cb(null,file.fieldname + '-' + Date.now() + path.extname(file.originalname))
-  }
-})
-//Init Upload
-const upload = multer({
-  storage: storage
-}).single('audioSample1')
+// //Set storage engine
+// const storage = multer.diskStore({
+//   destination: '/luthiers',
+//   filename: function(req, file, cb){
+//     cb(null,file.fieldname + '-' + Date.now() + path.extname(file.originalname))
+//   }
+// })
+// //Init Upload
+// const upload = multer({
+//   storage: storage
+// }).single('audioSample1')
 
 
 // env variables
@@ -55,7 +55,7 @@ const communityController = require('./controllers/communityboard.js')
 app.use('/community', communityController)
 
 app.get('/', (req, res) =>{
-  res.send('tone daddy')
+  res.render('home/home.ejs')
 })
 
 app.listen(PORT, () =>{

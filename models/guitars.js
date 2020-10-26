@@ -28,7 +28,7 @@ const guitarSchema = new mongoose.Schema({
   audioSample2: String,
   website: String,
   additionalComments: String,
-})
+}, {timestamps: true})
 
 const Guitar = mongoose.model('Instrument', guitarSchema)
 

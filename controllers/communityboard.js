@@ -8,7 +8,7 @@ const CommunityPost = require ('../models/community.js')
 
 const isAuthenticated = (req, res, next) =>{
 	if (req.session.currentUser){
-		return next()  // next() is like continue in programming.  Tells us to go to the next route we are trying to hit.
+		return next()  
 	} else {
 		res.redirect('/members/new')
 	}

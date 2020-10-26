@@ -13,14 +13,19 @@
       <% for(let i = 0; i < posts.length; i ++){ %>
 
         <li> <%= posts[i].posterName %> </li>
+        <li> <%= posts[i].createdAt %> </li>
         <li> <%= posts[i].post%> </li>
 
         <%}%>
     </ul>
     </table>
   </table>
-
-  <a href="/community" style="padding-bottom: 30px;">Back to Top</a>
+  <nav>
+    <table>
+      <td><a href="/luthiers/">Back to Gallery</a></td>
+        <td><a href="/community" style="padding-bottom: 30px;">Back to Top</a></td>
+    </table>
+  </nav>
 </div>
 
 <%- include('../partials/footer.ejs') %>

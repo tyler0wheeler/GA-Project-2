@@ -1,23 +1,34 @@
 <nav>
   <ul class="container" style="list-style: none;">
-    <table>
-      <nav>
-    <td><li><a href="/luthiers/">Gallery</a></li></td>
-    <td><li><a href="/luthiers/new/">Post a Build!</a></li></td>
-      <td><li><a href="/community/">Community Board</a></li></td>
+    <table class="u-full-width" style="background-color: lightblue;">
+      <tbody style="background-color: lightblue;">
+        <!-- <ul class="container" style="list-style: none;"> -->
     <% if (currentUser) { %>
-      <td><li>Welcome, <%= currentUser.username %>!</li></td>
-      <tr><li>
+
+        <!-- <table class="u-full-width"> -->
+          <tr>
+      <td><h4>Welcome, <%= currentUser.username %>!</h4></td>
+      <td><li><a href="/members/">My Gallery</a></li></td>
+      <td><li><a href="/luthiers/new/">Post a Build!</a></li></td>
+      <td><li><a href="/luthiers/">Gallery</a></li></td>
+      <td><li><a href="/community/">Community Board</a></li></td>
+      <td><li>
         <form action="/members?_method=DELETE" method="POST">
-          <input type="submit" value="Log Out" class="delete-button" />
+          <input class="button-primary" type="submit" value="Log Out" class="delete-button" />
         </form>
-      </li></tr>
-      <tr><li><a href="/members/">My Gallery</a></li></tr>
+      </li></td>
+          </tr>
+
 <% } else { %>
+  <tr>
     <td><li><a href="/users/new">Register</a></li></td>
     <td><li><a href="/members/new">Log In</a></li></td>
+    <td><li><a href="/luthiers/">Gallery</a></li></td>
+    <td><li><a href="/community/">Community Board</a></li></td>
+    </tr>
       <% } %>
-    </nav>
+      <!-- </ul> -->
+      </tbody>
       </table>
   </ul>
 </nav>

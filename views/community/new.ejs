@@ -7,8 +7,9 @@
 <form action="/community" method="POST">
   <input type="hidden" name="posterName" value="<%=currentUser.name%>">
   <input type="hidden" name="posterUserId" value="<%=currentUser._id%>">
+  <input type="hidden" name="createdAt" value="">
   Post: <input type="text" name="post" value="">
-  <input type="submit" name="" value="Post"/>
+  <input class="button-primary" type="submit" name="" value="Post"/>
 </form>
 <nav>
   <table>

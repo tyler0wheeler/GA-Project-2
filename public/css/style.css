@@ -12,9 +12,29 @@ img {
   display: block;
   width: 300px;
   height: 300px;
-  float: inherit;
+  float: left;
 }
 .index-image:hover{
   filter: grayscale(100%);
 
+}
+.button-delete{
+  color: red;
+  background-color: red;
+  border-color: #33C3F0;
+}
+#comments {
+  resize: none;
+  width: auto;
+  overflow: scroll;
+  padding: 10px 0 40px;
+}
+#homepage {
+  justify-content: center;
+
+}
+#homepage-nav{
+list-style: none;
+font-size: 25px;
+display: block;
 }

@@ -208,6 +208,16 @@ input[type="button"].button-primary {
   color: #FFF;
   background-color: #33C3F0;
   border-color: #33C3F0; }
+  input[type="submit"].button-delete{
+    color: #FFF;
+    background-color: #33C3F0;
+    border-color: #33C3F0;;
+  }
+  input[type="submit"].button-delete:hover{
+    color: #FFF;
+    background-color: red;
+    border-color: red;
+  }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -336,7 +346,12 @@ td:first-child {
 th:last-child,
 td:last-child {
   padding-right: 0; }
-
+tbody {
+  width: auto;
+  padding: 12px 15px;
+  text-align: left;
+  border: 3px solid #E1E1E1;
+}
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
