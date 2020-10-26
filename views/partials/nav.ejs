@@ -1,34 +1,29 @@
 <nav>
-  <ul class="container" style="list-style: none;">
-    <table class="u-full-width" style="background-color: lightblue;">
-      <tbody style="background-color: lightblue;">
-        <!-- <ul class="container" style="list-style: none;"> -->
+  <div class="container">
+    <table class="u-full-width">
+      <tbody id="nav-background">
     <% if (currentUser) { %>
-
-        <!-- <table class="u-full-width"> -->
           <tr>
-      <td><h4>Welcome, <%= currentUser.username %>!</h4></td>
-      <td><li><a href="/members/">My Gallery</a></li></td>
-      <td><li><a href="/luthiers/new/">Post a Build!</a></li></td>
-      <td><li><a href="/luthiers/">Gallery</a></li></td>
-      <td><li><a href="/community/">Community Board</a></li></td>
-      <td><li>
+      <td><h5>Welcome, <%= currentUser.username %>!</h5></td>
+      <td><a href="/members/">My Gallery</a></td>
+      <td><a href="/luthiers/new/">Post a Build!</a></td>
+      <td><a href="/luthiers/">Gallery</a></td>
+      <td><a href="/community/">Community Board</a></td>
+      <td style="padding-top: 20px;">
         <form action="/members?_method=DELETE" method="POST">
-          <input class="button-primary" type="submit" value="Log Out" class="delete-button" />
+          <input class="button-primary" type="submit" value="Log Out" class="delete-button"/>
         </form>
-      </li></td>
+      </td>
           </tr>
-
-<% } else { %>
-  <tr>
-    <td><li><a href="/users/new">Register</a></li></td>
-    <td><li><a href="/members/new">Log In</a></li></td>
-    <td><li><a href="/luthiers/">Gallery</a></li></td>
-    <td><li><a href="/community/">Community Board</a></li></td>
-    </tr>
-      <% } %>
-      <!-- </ul> -->
-      </tbody>
+      <% } else { %>
+        <tr>
+          <td><a href="/users/new">Register</a></td>
+          <td><a href="/members/new">Log In</a></td>
+          <td><a href="/luthiers/">Gallery</a></td>
+          <td><a href="/community/">Community Board</a></td>
+          </tr>
+            <% } %>
+        </tbody>
       </table>
-  </ul>
+    </div>
 </nav>

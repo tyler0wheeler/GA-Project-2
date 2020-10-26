@@ -1,5 +1,9 @@
+
 body {
-  background-color: lightpink;
+  background-image: linear-gradient(to bottom, #d4b5b58a, rgb(35 34 34 / 83%)), url(https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  /* background-size: cover; */
+  background-repeat: repeat;
+
 }
 form {
   display: inline-grid;
@@ -7,6 +11,9 @@ form {
 
 h1{
   text-align: center;
+}
+.background-image::before{
+  filter: grayscale(100%);
 }
 
 /* } */
@@ -39,4 +46,7 @@ h1{
 list-style: none;
 font-size: 25px;
 display: block;
+}
+#nav-background{
+  background-color: #b9968e;
 }

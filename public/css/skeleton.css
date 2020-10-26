@@ -158,9 +158,12 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #e1e1e1;
+  font-size: 21px;
+}
+
 a:hover {
-  color: #0FA0CE; }
+  color: #5c6aaf; }
 
 
 /* Buttons
@@ -336,7 +339,7 @@ th,
 td {
   width: auto;
   padding: 12px 15px;
-  text-align: left;
+  text-align: center;
   border-bottom: 1px solid #E1E1E1;
   border-top: 1px solid #E1E1E1;
  }
@@ -350,7 +353,7 @@ tbody {
   width: auto;
   padding: 12px 15px;
   text-align: left;
-  border: 3px solid #E1E1E1;
+  border: 3px solid #695a5a;
 }
 
 /* Spacing
