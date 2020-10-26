@@ -386,7 +386,9 @@ form {
 .u-pull-right {
   float: right; }
 .u-pull-left {
-  float: left; }
+  float: left;
+  width: 50%;
+}
 
 
 /* Misc

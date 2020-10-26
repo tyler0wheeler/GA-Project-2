@@ -3,28 +3,26 @@
 <div class="container">
   <h2>Community Daddy</h2>
   <% if (currentUser) { %>
-
-    <p><a href="/community/new">Post</a></p>
-
+    <form action="/community/new" method="get">
+    <input class="button-primary" type="submit" value="Post"/>
+</form>
   <%}%>
   <table>
     <table>
     <ul class="column">
       <% for(let i = 0; i < posts.length; i ++){ %>
-
-        <li> <%= posts[i].posterName %> </li>
-        <li> <%= posts[i].createdAt %> </li>
-        <li> <%= posts[i].post%> </li>
-
+        <div class="row" style="background-color: white; padding-block-start: 20px; border: double; border-radius: 20px; width: 80%;">
+        <li style="maring-left: 10px;"> Posted By: <%= posts[i].posterName %> </li>
+        <li style="list-style: none; margin-left: 20px;"> <%= posts[i].post%> </li>
+        <li style="font-size: 9px; list-style: none; margin-left: 30px;"> <%= posts[i].createdAt %> </li>
+        </div>
         <%}%>
     </ul>
     </table>
   </table>
   <nav>
-    <table>
       <td><a href="/luthiers/">Back to Gallery</a></td>
-        <td><a href="/community" style="padding-bottom: 30px;">Back to Top</a></td>
-    </table>
+        <td><a href="/community">Back to Top</a></td>
   </nav>
 </div>
 

@@ -5,15 +5,17 @@ form {
   display: inline-grid;
 }
 
-
-
+h1{
+  text-align: center;
 }
-img {
+
+/* } */
+/* img {
   display: block;
   width: 300px;
   height: 300px;
   float: left;
-}
+} */
 .index-image:hover{
   filter: grayscale(100%);
 
