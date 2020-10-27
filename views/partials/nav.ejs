@@ -4,7 +4,7 @@
       <tbody id="nav-background">
     <% if (currentUser) { %>
           <tr>
-      <td><h5>Welcome, <%= currentUser.username %>!</h5></td>
+      <td><h5>Welcome, <%= currentUser.name %>!</h5></td>
       <td><a href="/members/">My Gallery</a></td>
       <td><a href="/luthiers/new/">Post a Build!</a></td>
       <td><a href="/luthiers/">Gallery</a></td>
@@ -13,7 +13,7 @@
         <form action="/members?_method=DELETE" method="POST">
           <input class="button-primary" type="submit" value="Log Out" class="delete-button"/>
         </form>
-      </td>
+            </td>
           </tr>
       <% } else { %>
         <tr>

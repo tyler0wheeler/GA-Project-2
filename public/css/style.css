@@ -1,4 +1,4 @@
-
+html{}
 body {
   background-image: linear-gradient(to bottom, #d4b5b58a, rgb(35 34 34 / 83%)), url(https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-repeat: repeat;
@@ -25,7 +25,7 @@ h1{
   float: left;
 } */
 .index-image:hover{
-  filter: grayscale(100%);
+  filter: grayscale(75%);
 
 }
 .button-delete{
@@ -39,6 +39,12 @@ h1{
   overflow: scroll;
   font-size: 16px;
 
+}
+#homepage-image{
+  border: 5px;
+  width: 50%;
+  height: 655px;
+  border-style: outset;
 }
 #homepage {
   justify-content: center;
