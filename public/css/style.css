@@ -1,8 +1,9 @@
 
 body {
   background-image: linear-gradient(to bottom, #d4b5b58a, rgb(35 34 34 / 83%)), url(https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  /* background-size: cover; */
   background-repeat: repeat;
+  background-size: auto;
+  /* background-repeat: repeat; */
 
 }
 form {
@@ -32,11 +33,12 @@ h1{
   background-color: red;
   border-color: #33C3F0;
 }
-#comments {
+#comments-new {
   resize: none;
   width: auto;
   overflow: scroll;
-  padding: 10px 0 40px;
+  font-size: 16px;
+
 }
 #homepage {
   justify-content: center;
@@ -49,4 +51,24 @@ display: block;
 }
 #nav-background{
   background-color: #b9968e;
+}
+.login-forms{
+  font-size: 25px;
+  color: #d4b5b5;
+  text-shadow: 2px 1px #222;
+}
+#community-posts{
+  background-color: transparent;
+  padding-block-start: 20px;
+  border: double;
+  border-radius: 30px;
+  width: 91%;
+}
+#community-post-box{
+  width: 700px;
+  height: 450px;
+  resize: none;
+}
+#post-button{
+  width: 30%;
 }

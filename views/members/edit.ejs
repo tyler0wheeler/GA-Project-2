@@ -4,7 +4,7 @@
 <nav>
   <a href="/members/<%=guitars.id%>">Don't Edit</a>
 </nav>
-<form action="/members/<%=guitars.id%>?_method=PUT" method="POST">
+<form class="login-forms" action="/members/<%=guitars.id%>?_method=PUT" method="POST">
   Body Shape: <input type="text" name="bodyShape" value="<%= guitars.bodyShape%>">
   Top Wood: <input type="text" name="topWood" value="<%= guitars.topWood%>">
   Back and Sides Wood: <input type="text" name="backAndSidesWood" value="<%= guitars.backAndSidesWood%>">
@@ -27,7 +27,7 @@
   Front Image: <input type="text" name="frontImage" value="<%= guitars.frontImage%>">
   Back Image: <input type="text" name="backImage" value="<%= guitars.backImage%>">
   Website: <input type="url" name="website" value="<%=guitars.website%>">
-  Addition Comments: <input type="text" id="comments" name="additionalComments" value="<%= guitars.additionalComments%>" >
+  Addition Comments: <textarea type="text" name="additionalComments" value="<%=guitars.additionalComments%>" id="comments-new"></textarea>
   Audio Sample: <input type="file" name="audioSample1" id="audio" value="<%= guitars.audioSample1%>" accept="audio/wav">
   <input class="button-primary" type="submit" name="edit" value="Edit Build"/>
 <form action="/members/<%=guitars.id%>?_method=DELETE" method="POST">

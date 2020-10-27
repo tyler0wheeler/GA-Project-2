@@ -2,12 +2,12 @@
 <%- include('../partials/nav.ejs') %>
 <div class="container">
   <h2>My Gallery</h2>
-  <nav>
+  <!-- <nav>
   <a href="/members/<%=guitars.id%>/edit">(Edit Guitar)</a>
-  </nav>
+  </nav> -->
   <div class="row">
   <div class="columns">
-        <img src="<%= guitars.frontImage%>" alt="">
+        <img src="<%= guitars.frontImage%>" alt="" style="margin-right: 95px">
         <img src="<%= guitars.backImage%>" alt="">
       </div>
       </div>
@@ -56,9 +56,8 @@
 
   <div class="row">
     <div class="columns">
-
+      <a href="/members/<%=guitars.id%>/edit">(Edit Guitar)</a>
       <a href="/luthiers/">Back to Gallery</a>
-
       </div>
     </div>
 </div>

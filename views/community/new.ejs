@@ -4,12 +4,12 @@
 <nav>
   <a href="/community/">Back to Community</a>
 </nav>
-<form action="/community" method="POST">
+<form class="login-forms" action="/community" method="POST">
   <input type="hidden" name="posterName" value="<%=currentUser.name%>">
   <input type="hidden" name="posterUserId" value="<%=currentUser._id%>">
   <input type="hidden" name="createdAt" value="">
-  Post: <input type="text" name="post" value="">
-  <input class="button-primary" type="submit" name="" value="Post"/>
+  Post: <textarea  id="community-post-box" name="name" ></textarea>
+  <input  id="post-button" class="button-primary" type="submit" name="" value="Post"/>
 </form>
 <nav>
 
