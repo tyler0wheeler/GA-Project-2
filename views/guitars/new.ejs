@@ -6,30 +6,30 @@
 <form class="login-forms" action="/luthiers" method="POST" >
   <input type="hidden" name="builder" value="<%=currentUser.name%>">
   <input type="hidden" name="builderId" value="<%=currentUser._id%>">
-  Body Shape: <input type="text" name="bodyShape" value="">
-  Top Wood: <input type="text" name="topWood" value="">
-  Back and Sides Wood: <input type="text" name="backAndSidesWood" value="">
-  Neck Wood: <input type="text" name="neckWood" value="">
-  Fret Board: <input type="text" name="fretboard" value="">
-  Body Binding: <input type="text" name="bodyBinding" value="">
-  Neck Binding: <input type="text" name="neckBinding" value="">
-  Bridge : <input type="text" name="bridge" value="">
-  Truss Rod: <input type="text" name="trussrod" value="">
-  Nut: <input type="text" name="nut" value="">
-  Saddle <input type="text" name="saddle" value="">
+  Body Shape: <input type="text" name="bodyShape" value="" placeholder="(required)">
+  Top Wood: <input type="text" name="topWood" value="" placeholder="(required)">
+  Back and Sides Wood: <input type="text" name="backAndSidesWood" value="" placeholder="(required)">
+  Neck Wood: <input type="text" name="neckWood" value="" placeholder="(required)">
+  Fret Board: <input type="text" name="fretboard" value="" placeholder="(required)">
+  Body Binding: <input type="text" name="bodyBinding" value="" placeholder="(required)">
+  Neck Binding: <input type="text" name="neckBinding" value="" placeholder="(required)">
+  Bridge : <input type="text" name="bridge" value="" placeholder="(required)">
+  Truss Rod: <input type="text" name="trussrod" value="" placeholder="(required)">
+  Nut: <input type="text" name="nut" value="" placeholder="(required)">
+  Saddle <input type="text" name="saddle" value="" placeholder="(required)">
   Scale Length: <input type="text" name="scaleLength" value="">
   # of Frets: <input type="number" name="numOfFrets" min=0>
   Fret Material: <input type="text" name="fretMaterial" value="">
-  Inlay Material: <input type="text" name="inlayMaterial" value="">
-  Tuning Machines: <input type="text" name="tuningMachines" value="">
+  Inlay Material: <input type="text" name="inlayMaterial" value="" placeholder="(required)">
+  Tuning Machines: <input type="text" name="tuningMachines" value="" placeholder="(required)">
   Electronics: <input type="text" name="electronics" value="">
-  Body Finish: <input type="text" name="bodyFinish" value="">
-  Neck Finish: <input type="text" name="neckFinish" value="">
+  Body Finish: <input type="text" name="bodyFinish" value="" placeholder="(required)">
+  Neck Finish: <input type="text" name="neckFinish" value="" placeholder="(required)">
   Front Image: <input type="text" name="frontImage" value="">
   Back Image: <input type="text" name="backImage" value="">
   Website: <input type="url" name="website" value="">
   Addition Comments: <textarea type="text" name="additionalComments" value="" id="comments-new"></textarea>
-  Audio Sample: <input type="file" name="audioSample1" id="audio" value="" accept="audio/wav">
+  Audio/Video Link: <input type="url" name="audioSample1" value="">
   <input class="button-primary" type="submit" name="" value="Add Build"/>
 </form>
 </div>

@@ -28,8 +28,10 @@
   Back Image: <input type="text" name="backImage" value="<%= guitars.backImage%>">
   Website: <input type="url" name="website" value="<%=guitars.website%>">
   Addition Comments: <textarea type="text" name="additionalComments" value="<%=guitars.additionalComments%>" id="comments-new"><%=guitars.additionalComments%></textarea>
-  Audio Sample: <input type="file" name="audioSample1" id="audio" value="<%= guitars.audioSample1%>" accept="audio/wav">
+  Audio/Video Link: <input type="url" name="audioSample1" value="<%= guitars.audioSample1%>">
+  <nav>
   <input class="button-primary" type="submit" name="edit" value="Edit Build" />
+  </nav>
   </form>
   <nav>
 <form action="/members/<%=guitars.id%>?_method=DELETE" method="POST">

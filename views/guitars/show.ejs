@@ -4,8 +4,8 @@
 <h2>Built by: <%=guitars.builder%></h2>
 <div class="row">
 <div class="columns">
-      <img src="<%= guitars.frontImage%>" alt="" style="margin-right: 95px">
-      <img src="<%= guitars.backImage%>" alt="">
+      <img src="<%= guitars.frontImage%>" alt="" style="margin-right: 40px">
+      <img src="<%= guitars.backImage%>" alt="" style="margin-left: 40px">
     </div>
     </div>
     <div class="u-pull-left">
@@ -22,9 +22,7 @@
           <li>  Bridge: <%= guitars.bridge%> </li>
           <li>  Trussrod: <%= guitars.trussrod%> </li>
           <li>  Nut: <%= guitars.nut%> </li>
-          <li> Audio Sample 1: <audio controls>
-            <source src="<%=guitars.audioSample1%>" type="audio/wav">
-              </audio>
+          <li>  Audio/Video Link: <a href="<%=guitars.audioSample1%>" target="_blank"><%=guitars.audioSample1%></a></li>
           </ul>
           </div>
           </div>
