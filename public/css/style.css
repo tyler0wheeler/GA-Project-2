@@ -4,13 +4,10 @@ body {
   background-repeat: repeat;
   background-size: auto;
   min-height: 1000px;
-  /* background-repeat: repeat; */
-
 }
 form {
   display: inline-grid;
 }
-
 h1{
   text-align: center;
 }
@@ -20,7 +17,6 @@ h1{
 
 .index-image:hover{
   filter: grayscale(75%);
-
 }
 .button-delete{
   color: red;
@@ -32,7 +28,6 @@ h1{
   width: auto;
   overflow: scroll;
   font-size: 16px;
-
 }
 #homepage-image{
   border: 5px;
@@ -42,7 +37,6 @@ h1{
 }
 #homepage {
   justify-content: center;
-
 }
 #homepage-nav{
 list-style: none;
@@ -77,5 +71,4 @@ footer{
   text-align: right;
   font-style: italic;
   font-size: 12px;
-
 }

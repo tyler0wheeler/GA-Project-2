@@ -9,22 +9,22 @@
   <%}%>
   <table>
     <table>
-    <ul class="column">
-      <% for(let i = 0; i < posts.length; i ++){ %>
-        <div class="row"  id="community-post" style="">
-          <div class="posts">
-        <li style="maring-left: 10px;"> Posted By: <%= posts[i].posterName %> </li>
-        <li style="list-style: none; margin-left: 30px;"> <%= posts[i].post%> </li>
-        <li style="font-size: 9px; list-style: none; margin-left: 30px;"> <%= posts[i].createdAt %> </li>
+      <ul class="column">
+        <% for(let i = 0; i < posts.length; i ++){ %>
+          <div class="row"  id="community-post" style="">
+            <div class="posts">
+          <li style="maring-left: 10px;"> Posted By: <%= posts[i].posterName %> </li>
+          <li style="list-style: none; margin-left: 30px;"> <%= posts[i].post%> </li>
+          <li style="font-size: 9px; list-style: none; margin-left: 30px;"> <%= posts[i].createdAt %> </li>
+            </div>
           </div>
-        </div>
-        <%}%>
-    </ul>
+          <%}%>
+      </ul>
     </table>
   </table>
   <nav>
-      <td><a href="/luthiers/">Back to Gallery</a></td>
-        <td><a href="/community">Back to Top</a></td>
+    <td><a href="/luthiers/">Back to Gallery</a></td>
+    <td><a href="/community">Back to Top</a></td>
   </nav>
 </div>
 

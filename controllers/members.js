@@ -23,7 +23,7 @@ members.get('/', (req, res) =>{
       currentUser: req.session.currentUser
     })
     console.log(req.session.currentUser._id);
-  }
+      }
   })
 })
 // Show
@@ -39,7 +39,7 @@ members.get('/:id', (req, res) =>{
     console.log(req.session.currentUser._id);
       }
     })
-  })
+})
   //Edit
   members.get('/:id/edit', (req, res) =>{
     Guitar.findById(req.params.id, (err, editGuitar) =>{
@@ -85,7 +85,7 @@ members.delete('/:id', (req, res) =>{
     } else{
       console.log(deletedGuitar);
     res.redirect('/members')
-  }
+      }
   })
 })
 //Logout user
