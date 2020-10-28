@@ -57,37 +57,37 @@ router.post('/', isAuthenticated,(req, res) =>{
   })
 })
 
-//Edit
-router.get('/:id/edit', isAuthenticated, (req, res) =>{
-  Guitar.findById(req.params.id, (err, editGuitar) =>{
-    res.render('guitars/edit.ejs', {
-      guitars: editGuitar,
-      currentUser: req.session.currentUser
-    })
-  })
-})
-
-router.put('/:id', (req, res) =>{
-  Guitar.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedGuitar) =>{
-    if(err){
-      console.log(err);
-    } else{
-      console.log(updatedGuitar);
-      res.redirect('/luthiers/' + req.params.id)
-    }
-  })
-})
-//Delete
-router.delete('/:id', isAuthenticated, (req, res) =>{
-  Guitar.findByIdAndRemove(req.params.id, (err, deletedGuitar) =>{
-    if (err){
-      console.log(err);
-    } else{
-      console.log(deletedGuitar);
-    res.redirect('/luthiers')
-  }
-  })
-})
+// //Edit
+// router.get('/:id/edit', isAuthenticated, (req, res) =>{
+//   Guitar.findById(req.params.id, (err, editGuitar) =>{
+//     res.render('guitars/edit.ejs', {
+//       guitars: editGuitar,
+//       currentUser: req.session.currentUser
+//     })
+//   })
+// })
+//
+// router.put('/:id', (req, res) =>{
+//   Guitar.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedGuitar) =>{
+//     if(err){
+//       console.log(err);
+//     } else{
+//       console.log(updatedGuitar);
+//       res.redirect('/luthiers/' + req.params.id)
+//     }
+//   })
+// })
+// //Delete
+// router.delete('/:id', isAuthenticated, (req, res) =>{
+//   Guitar.findByIdAndRemove(req.params.id, (err, deletedGuitar) =>{
+//     if (err){
+//       console.log(err);
+//     } else{
+//       console.log(deletedGuitar);
+//     res.redirect('/luthiers')
+//   }
+//   })
+// })
 // router.get('/seed', (req, res) =>{
 //   Guitar.create([
 //     {bodyShape: 'Orchestra Model',
