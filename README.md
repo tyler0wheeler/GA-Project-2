@@ -22,9 +22,9 @@ The pages go as follows:
 The navigation bar gives the user a clear path to wherever they are looking to end up on the site.
 ## *Wireframes*
 -------------
-![Wireframe](IMG_5857.jpg)
-![Wireframe](IMG_5859.jpg)
-![Wireframe](IMG_5860.jpg)
+![Wireframe](/wireframes/IMG_5857.jpg)
+![Wireframe](/wireframes/IMG_5859.jpg)
+![Wireframe](/wireframes/IMG_5860.jpg)
 
 ## Languages Used
 -----------------
