@@ -2,7 +2,7 @@
 Poject 2 of GA SEI course
 -------------------------
 ## *The Luthier's Gallery*
-
+  [The Luthier's Gallery](https://luthiers-gallery.herokuapp.com/)
 ## *Inspiration*
 --------------
 With this full CRUD application, I wanted to create a place where luthiers could come together and share their builds and knowledge with other luthiers.  Luthiers in general are always very open to sharing their ideas with other builders and creating a community for them to do that is exactly what I set out to do.  This is not a place for people to sell their products but a community for us to come together and showcase our hard work.  What gives me inspiration as a builder is seeing what others are doing with their work.  I love to see the creativity of others and wanted to create a place where it could all be showcased.  You could see a builder of 15 years right next to a brand new builder.  There is very little judgment in this community as we are all here to appreciate and learn from the innovation and creativity of others.
@@ -29,6 +29,7 @@ The navigation bar gives the user a clear path to wherever they are looking to e
 ## Languages Used
 -----------------
 * Javascript
+* Mongodb
 * JSON
 * Express
 * HTML
