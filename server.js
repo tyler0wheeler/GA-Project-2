@@ -22,7 +22,7 @@ const multer = require('multer')
 
 // env variables
 const PORT = process.env.PORT
-const mongodbURI = process.env.MONGODBURI
+const mongodbURI = process.env.MONGODB_URI
 
 // Sessions
 app.use(session(
